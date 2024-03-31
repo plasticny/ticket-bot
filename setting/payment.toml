@@ -1,0 +1,61 @@
+# 個人資料
+[personal_information]
+  # 姓名
+  name = ''
+  # 聯絡電話號碼
+  phone = ''
+  # 電郵地址
+  email = ''
+
+# 領取門票方法
+[delivery_method]
+  # 領取門票方法
+  # 0: 順豐自助櫃, 1: 本地快遞
+  delivery_method = 0
+
+  # 選擇順豐自助櫃時，填這些
+  [delivery_method.sf]
+    # 國家/城市 不用填
+    phone = '' # 確認聯絡電話號碼
+    region = '' # 省/區
+    city = '' # 地區
+    sub_area = '' # 子地區
+    addr = '' # 順豐自助櫃地址
+    # 填編號，例如﹕
+    #   如果選項是「灣仔軒尼詩道298號298電腦特區二樓351號舖順豐自助櫃 ^H852TC01P^」
+    #   就填H852TC01P
+
+  # 選擇本地快遞時，填這些
+  [delivery_method.mail]
+    # 國家/城市 和 省/區不用填
+    city = '' # 地區
+    addr1 = '' # 區域
+    postal_code = '' # 郵政區號/郵政號碼
+    addr2 = '' # 街道/屋苑
+    addr3 = '' # 室/樓/大廈
+
+# 付款方式
+[payment_method]
+  # 0: VISA
+  # 1: Mastercard
+  # 2: 美國運通卡
+  # 3: 銀聯
+  # 4: wechat payment_method
+  # 5: alipay
+  # 6: alipay hk
+  # 7: payme
+  # 8: boc pay
+  # 9: 八達通
+  method = 9
+
+  # 如果選擇VISA / Mastercard / 美國運通卡 / 銀聯，填這些
+  [payment_method.info_1]
+    holder = '' # 持卡人姓名
+    card = '' # 信用卡號碼
+
+  # 如果選擇VISA / Mastercard / 美國運通卡，填這些
+  [payment_method.info_2]
+    # expiry (MM/YY)
+    expiry_month = '' 
+    expiry_year = ''
+    code = '' # 安全碼

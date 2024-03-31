@@ -1,0 +1,16 @@
+# chrome的用戶檔案路徑
+user_data_dir = ''
+
+# cityline頁面url
+url = 'https://sports.cityline.com/tc/2024/ittf2024.html'
+
+# 開始時間 'YYYY-MM-DD HH:MM:SS'
+start_time = '2024-03-26 18:23:15'
+
+# 票類 (填名字，e.g. A, VIP)
+# 說明﹕
+#   從最左邊的票類開始
+#   如果有這個類別 + 有票，則會選擇這個票類
+#   如果沒有這個類別 / 已經沒有票，則會選擇下一個，如此類推
+#   如果所有填了的票類都不能選，則自動選擇最高級的票類
+ticket_level = ['A1']
